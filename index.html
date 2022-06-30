@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.8"> 
+ <script src="d3.js"></script> 
+	<title>SVG fundamentals</title>
+		
+</head>
+<body>
+	
+	<!--<SVG id="chart" width="600" height="200"></SVG> -->
+	<svg width="600" height="200" fill="rgb(255,0,0">
+		<defs>
+		<rect id="black" x="0" y="0" width="20" height="20"
+		fill="rgb(0,0,0)" />
+		<rect id="white" x="0" y="0" width="20" height="20"
+		fill="rgb(255,255,0)" />
+		</defs>
+		<g transform="translate(10,10) scale(3)">
+		<use xlink:href="#black" />
+		<use xlink:href="#white" transform="translate(20,0)"/>
+		<use xlink:href="#white" transform="translate(0,20)"/>
+		<use xlink:href="#black" transform="translate(20,20) rotate(-90)"/>
+		</g>
+		</svg>
+<script>
+	/*
+const array = [100, 200, 300, 350, 375, 400, 500];
+d3.select("#chart")
+.selectAll("circle")
+.data(array)
+.enter()
+.append("circle")
+.attr("r", "10")
+.attr("cy", 100)
+.attr("cx", d => d)
+setInterval(function() {
+d3.select("#chart").selectAll("circle")
+.data([50, 75, 125, 225, 325, 425, 450])
+.transition().duration(10)
+.attr("r", 5)
+.attr("cx", d => d)
+.style("fill", "red")
+}, 150)
+*/
+</script>
+
+</body>
+</html>
